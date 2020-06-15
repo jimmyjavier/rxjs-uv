@@ -10,10 +10,3 @@ export const listaAlbums = [
     { id: 9, titulo: 'In Between Dreams', banda: 'Jack Johnson', anio: '2005' },
     { id: 10, titulo: 'Abraxas', banda: 'Carlos Santana', anio: '1970' },
 ];
-
-
-// export const allReaders = [
-//     { readerID: 1, name: 'Marie', weeklyReadingGoal: 400, totalMinutesRead: 5600 },
-//     { readerID: 2, name: 'Daniel', weeklyReadingGoal: 210, totalMinutesRead: 3000 },
-//     { readerID: 3, name: 'Lanier', weeklyReadingGoal: 140, totalMinutesRead: 600 }
-// ];

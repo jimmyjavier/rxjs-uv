@@ -3,16 +3,6 @@ import { Observable, from, fromEvent } from 'rxjs';
 import { listaAlbums } from './data';
 ////#endregion
 /********************************* SECCIÓN 1 **********************************/
-/*
-*  Un Observer es un consumidor de valores entregado por un Observable.
-*  Los Observers son simplemente una serie de callbacks, una por cada
-*  tipo de notificacíon entregada por el Observable: next, error y complete.
-*   El siguiente es un ejemplo de un típico objeto Observer.
-*   Y para utilizar un observer debemos pasárselo al método subscribe del observable.
-*
-*  Los Observers son solo objetos con tres funciones, una para cada tipo de notificación
-*   que puede entregar el Observable.
-*/
 
 // const observer = {
 //     next: x => console.log(`El observer obtuvo el siguiente valor: ${x}`),
@@ -48,12 +38,6 @@ import { listaAlbums } from './data';
 /*=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=*/
 
 /********************************* SECCIÓN 3 **********************************/
-/*
-*  Los Observers en RxJS pueden ser parciales, ya que si no proporcionamos
-*   alguna función, la ejecución del Observable se ejecutará de manera normal,
-*   excepto que unas notificaciones serán ignoradas.
-*   El siguiente es un ejemplo sin el callback "complete".
-*/
 
 // const observer = {
 //     next: x => console.log(`Observer got a new value: ${x}`),
@@ -65,12 +49,6 @@ import { listaAlbums } from './data';
 /*=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=*/
 
 /********************************* SECCIÓN 4 **********************************/
-/*
-*   Cuando nos suscribimos a un Observable, también podemos proporcionar
-*   los callbacks del observer como argumentos, sin necesidad de estar
-*   anexadas a un objeto Observer.
-*
-*/
 
 // observable.subscribe(x => console.log('Observer obtuvo el siguiente valor: ' + x));
 
@@ -79,10 +57,7 @@ import { listaAlbums } from './data';
 /*=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=*/
 
 /********************************* SECCIÓN 5 **********************************/
-/*
-*   Internamente, en observable.subscribe, se creará un objeto Observer
-*   usando el primer callback como "next".
-*/
+
 
 // observable.subscribe(
 //     x => console.log(`El Observer obtuvo el siguiente valor: ${x}`),
@@ -95,10 +70,6 @@ import { listaAlbums } from './data';
 /*=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=*/
 
 /********************************* SECCIÓN 6 **********************************/
-/*
-*   Ejecución de observers distintos
-*
-*/
 
 // let horaActual$ = new Observable(subscriber => {
 //     const horaString = new Date().toLocaleTimeString();
@@ -126,10 +97,7 @@ import { listaAlbums } from './data';
 /*=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=*/
 
 /********************************* SECCIÓN 7 **********************************/
-/*
-*   Ejecución de distintas suscripciones, y terminación al agregar la suscripción
-*   a una suscripción padre.
-*/
+
 // let temporizadorDiv = document.querySelector('#temporizador');
 // let botonTemporizador = document.querySelector('#btnTemporizador');
 

@@ -29,9 +29,6 @@ import { mergeMap, tap, catchError, filter, takeUntil } from 'rxjs/operators';
 /*=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=||=*/
 
 /********************************* SECCIÓN 2 **********************************/
-/**
- * Cancelamos la ejecución del temporizador con el operador takeUntil
-  */
 
 // let temporizadorDiv = document.querySelector('#temporizador');
 // let btnTemporizador = document.querySelector('#btnTemporizador');
